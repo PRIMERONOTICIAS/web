@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Search Page</title>
+<meta name = "format-detection" content = "telephone=no" />
+<meta charset="utf-8">
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/superfish.css">
+<link rel="stylesheet" href="css/skeleton.css" />
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Marcellus' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="search/search.js"></script>
+<script src="js/jquery.ui.totop.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+jQuery(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+		}); 
+</script>
+<!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css">
+  	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro: 900' rel='stylesheet' type='text/css'>
+
+<![endif]-->
+</head>
+<body class="page1">
+<!-- Header -->
+<header>
+  <div class="search_1">
+	  <div class="container_12">
+	  	<div class="grid_12">
+			<form id="search" action="search.php" method="GET" accept-charset="utf-8">
+				<input type="text" onclick="this.value='';" value="" name="s" />
+				<a onclick="document.getElementById('search').submit()"></a>
+			</form>   
+	  	</div>
+	  </div>
+  </div>
+  <div class="container_12">
+      <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+      <nav>
+          <ul class="sf-menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="index-1.html">company</a>		       
+            </li>
+            <li><a href="index-2.html">services</a>
+               <ul>
+                <li><a href="#">services list</a></li>
+                <li><a href="#">Overview</a>
+                  <ul>
+                    <li><a href="#">Planning</a></li>
+                    <li><a href="#">development</a></li>
+                    <li><a href="#">maintaining</a></li>
+                    <li><a href="#">integration</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">The Process</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </li>
+            <li><a href="index-3.html">contacts</a></li>
+          </ul>
+      </nav>
+      <div class="clear"></div>
+  </div>
+</header>
+<!--main-->
+
+<div class="main">
+	<div class="content">
+	<div class="container_12">
+        <div class="grid_12">
+<h2>Search result:</h2>
+<div id="search-results"></div>
+		</div>	
+        <div class="clear"></div>
+	</div>
+</div>
+</div>
+<footer>
+	<div class="copy al_cntr">
+    	Visco &copy; 2013 <a href="index-4.html">Privacy Policy</a> 
+    </div>
+    
+</footer>
+    <!-- Footer end-->
+</body>
+</html>
